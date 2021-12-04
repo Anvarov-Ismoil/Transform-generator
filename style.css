@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+}
+
+.container{
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.range-block{
+    padding: 20px;
+    background: #999;
+}
+
+p{
+    color: #fff;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+input{
+    margin-right: 15px;
+}
+
+.block{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #999;
+    border: 0px solid blue;
+}
+
+textarea{
+    width: 70%;
+    height: 50%;
+    resize: none;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+    border: none;
+}
+
+
+/* Hide the original range slider. */
+.range-block input[type="range"]{
+    appearance: none; 
+    border: none; 
+    outline: none; 
+    box-shadow: none;
+}
+.range-block input[type="range"]::-webkit-slider-thumb{ 
+    appearance: none; 
+}
+
+/* Customize the slider track. */
+.range-block input[type="range"]::-webkit-slider-runnable-track{
+    background: blue; 
+}
+.range-block input[type="range"]::-moz-range-track{
+    background: blue; 
+}
+
+/* Customize the slider button. */
+.range-block input[type="range"]::-webkit-slider-thumb{
+    width: 16px; 
+    height: 16px; 
+    background: black; 
+}
+.range-block input[type="range"]::-moz-range-thumb{
+    width: 16px;
+    height: 16px; 
+    background: black; 
+} 
